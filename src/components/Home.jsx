@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
+
   useEffect(() => {
     const img = new Image();
     img.src = heroImage;
@@ -16,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div name="home" className="h-screen w-full bg-gray-100">
+    <div name="home" className="h-screen w-full bg-gray-100 overflow-x-hidden">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="order-2 md:order-1">
           {imageLoaded && (
@@ -42,6 +43,7 @@ const Home = () => {
                     to="portfolio"
                     smooth
                     duration={1000}
+                    offset={-30}
                     className="group text-white w-fit md:mx-0 mx-auto px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-500 to-red-700 cursor-pointer"
                   >
                     Portfolio
@@ -63,7 +65,7 @@ const Home = () => {
               className="rounded-2xl mx-auto w-3/5 md:w-50 mb-2 md:mb-0"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1.5 }}
             />
           )}
         </div>
