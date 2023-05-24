@@ -1,6 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { TbAlignBoxLeftMiddle } from "react-icons/tb";
+import resume from "../KianMalakootiResume.pdf";
 
 const SocialLinks = () => {
   const links = [
@@ -11,7 +13,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com",
+      href: "https://www.linkedin.com/in/kian-malakooti-18397218b/",
       style: "rounded-tr-md",
     },
     {
@@ -21,24 +23,35 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://www.github.com",
+      href: "https://github.com/kianxm",
     },
     {
       id: 3,
       child: (
         <>
-          Email <HiOutlineMail size={30} />
+          Email
+          <HiOutlineMail size={30} />
         </>
       ),
       href: "mailto:kianjmalakooti@gmail.com",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          Resume <TbAlignBoxLeftMiddle size={30} />
+        </>
+      ),
+      href: resume,
       style: "rounded-br-md",
+      download: true,
     },
   ];
 
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({ id, child, href, style }) => (
+        {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
@@ -50,6 +63,7 @@ const SocialLinks = () => {
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
+              download={download}
               target="_blank"
               rel="noreferrer"
             >

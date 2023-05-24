@@ -8,7 +8,7 @@ const About = () => {
         <div>
           <img
             src={AboutImage}
-            alt="about"
+            alt=""
             className="rounded-2xl w-3/5 md:w-96 mt-36 md:mt-0 mx-auto"
           ></img>
         </div>
@@ -19,7 +19,7 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800">
             Guam ✈️ California 📍
           </h2>
-          <p className="text-gray-600 py-4 max-w-md">
+          <p className="text-gray-600 py-4 max-w-md text-[0.95rem] md:text-md font-medium">
             I am an aspiring Computer Engineer with a strong passion for
             technology and a diverse skill set that includes proficiency in
             HTML, JavaScript, CSS, Python, C++, C, and Swift. With an innate

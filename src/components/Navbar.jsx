@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState();
@@ -15,27 +16,40 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "projects",
+      link: "portfolio",
     },
     {
       id: 4,
+      link: "timeline",
+    },
+    {
+      id: 5,
+      link: "experience",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-whte fixed bg-white shadow-md">
+    <div className="flex justify-between items-center w-full h-20 px-4 fixed bg-white shadow-md z-50">
       <div>
-        <h1 className="text-4xl text-gray-800 font-bold ml-12">kian.dev</h1>
+        <h1 className="md:text-4xl text-3xl text-gray-800 font-bold md:ml-12 ml-0">
+          kian.dev
+        </h1>
       </div>
 
-      <ul className="hidden md:flex mr-12">
+      <ul className="hidden md:flex md:mr-4 mr-0">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-semibold text-xl text-gray-800 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-semibold text-xl text-gray-800 relative group"
           >
-            {link}
+            <Link to={link} smooth duration={1000}>
+              {link}
+            </Link>
+            <span className="absolute left-1 bottom-[-10px] w-0 h-1 bg-red-700 transition-all duration-500 group-hover:w-[90%]"></span>
           </li>
         ))}
       </ul>
@@ -54,7 +68,14 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl font-bold"
             >
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={1000}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
