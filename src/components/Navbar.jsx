@@ -35,7 +35,12 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex justify-between items-center w-screen h-20 px-4 fixed bg-white z-50">
+      <motion.div
+        className="flex justify-between items-center w-screen h-20 px-4 fixed bg-white z-50"
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <motion.div
           initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -92,7 +97,7 @@ const Navbar = () => {
             ))}
           </ul>
         )}
-      </div>
+      </motion.div>
     </nav>
   );
 };
