@@ -1,22 +1,20 @@
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Hero from "./components/Hero";
 import SocialLinks from "./components/SocialLinks";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+// import About from "./components/About";
+import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <Navbar />
-      <Home />
+      <Hero />
       <SocialLinks />
-      <About />
-      <Portfolio />
-      <Timeline />
+      {/* <About /> */}
+      <Projects />
       <Experience />
-    </div>
+    </>
   );
 }
 

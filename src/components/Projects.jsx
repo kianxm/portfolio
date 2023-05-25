@@ -5,7 +5,7 @@ import dormRender from "../images/dormdevicerender.png";
 import { BsCodeSlash } from "react-icons/bs";
 import { ImCodepen } from "react-icons/im";
 
-const Portfolio = () => {
+const Projects = () => {
   const projects = [
     {
       id: 1,
@@ -44,54 +44,58 @@ const Portfolio = () => {
 
   return (
     <div
-      name="portfolio"
-      className="w-full h-full bg-gray-100 items-center text-gray-800 pb-12"
+      name="projects"
+      className="w-full h-full bg-white items-center text-gray-800 pb-12"
     >
-      <h1 className="text-4xl p-3 pt-20 font-bold text-center">Portfolio</h1>
-      <h2 className="md:text-lg text-md pb-5 font-medium text-center italic">
-        Check out some of my recent work!
-      </h2>
+      <h1 className="text-8xl sm:text-6xl xs:text-5xl pt-32 pb-20 font-bold text-center">
+        Projects 🎏
+      </h1>
       {projects.map(
         ({
           id,
           name,
           image,
           description,
-          link,
           languages,
           demoLink,
           codeLink,
           alt,
         }) => (
-          <div className="md:w-6/12 max-sm:w-5/6 mx-auto bg-white p-8 md:rounded-3xl rounded-xl shadow-xl-center hover:shadow-red-700/30 transition-all duration-500 mb-12">
+          <div
+            key={id}
+            className="w-6/12 2xl:w-7/12 xl:w-4/6 lg:w-5/6 mx-auto bg-white p-8 md:rounded-3xl rounded-xl shadow-xl-center hover:shadow-red-700/30 transition-all duration-500 mb-12"
+          >
             <div
-              className={`flex flex-col justify-center items-center ${
-                id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+              className={`flex flex-row md:flex-col justify-center items-center ${
+                id % 2 === 0 ? "flex-row-reverse" : ""
               }`}
             >
-              <div className="flex-1 text-center">
-                <div className="w-72 h-48 sm:w-[24vw] sm:h-72 md:rounded-3xl rounded-xl overflow-hidden shadow-lg">
+              <div className="text-center">
+                <div className="w-96 h-64 2xl:w-84 xs:w-72 xs:h-48 sm:mb-8 rounded-xl overflow-hidden shadow-lg">
                   <img
                     src={image}
+                    loading="lazy" //Does this work??
                     alt={alt}
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
-              <div className="flex-1 text-center px-20">
-                <h3 className="text-3xl font-bold mb-4 pt-8 md:pt-0">{name}</h3>
-                <p className="text-1xl font-medium text-gray-700">
+              <div className="text-center px-12 xl:px-8 lg:px-12">
+                <h3 className="text-3xl lg:text-2xl font-bold mb-2 pt-0">
+                  {name}
+                </h3>
+                <p className="text-md lg:text-sm font-medium text-gray-700">
                   {description}
                 </p>
                 <div className="mt-4 flex flex-wrap justify-center gap-4 mb-4">
-                  <p className="bg-white my-auto px-2 py-1 font-semibold rounded-md  shadow-lg">
+                  <p className="bg-white my-auto px-2 py-1 font-semibold rounded-md shadow-lg">
                     {languages[0]}
                   </p>
-                  <p className="bg-white my-auto px-2 py-1 font-semibold rounded-md  shadow-lg">
+                  <p className="bg-white my-auto px-2 py-1 font-semibold rounded-md shadow-lg">
                     {languages[1]}
                   </p>
                 </div>
-                <div className="justify-center flex flex-row gap-4 md:text-xl sm:text-lg">
+                <div className="justify-center flex flex-row gap-4 text-xl">
                   <a
                     target="_blank"
                     href={demoLink}
@@ -124,4 +128,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

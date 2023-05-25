@@ -17,15 +17,15 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "portfolio",
+      link: "projects",
     },
     {
       id: 4,
-      link: "timeline",
+      link: "experience",
     },
     {
       id: 5,
-      link: "experience",
+      link: "portfolio",
     },
     {
       id: 6,
@@ -34,29 +34,25 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.nav
-      initial={{ y: -120 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 1.2, delay: 0.5 }}
-    >
-      <div className="flex justify-between items-center w-screen h-20 px-4 fixed bg-white shadow-md z-50">
+    <nav>
+      <div className="flex justify-between items-center w-screen h-20 px-4 fixed bg-white z-50">
         <motion.div
-          initial={{ y: -50, opacity: 0 }}
+          initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 1 }}
         >
-          <h1 className="md:text-4xl text-3xl text-gray-800 font-bold md:ml-12 ml-0">
+          <h1 className="text-4xl md:text-3xl text-gray-800 font-bold ml-12 md:ml-0">
             kian.dev
           </h1>
         </motion.div>
 
-        <ul className="hidden md:flex md:mr-4 mr-0">
+        <ul className="flex lg:hidden mr-8 xl:mr-4 md:mr-0">
           {links.map(({ id, link }) => (
             <motion.li
               key={id}
-              initial={{ y: -30, opacity: 0 }}
+              initial={{ y: -80, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: id * 0.2 }}
+              transition={{ duration: 1, delay: id * 0.1 }}
               className="px-4 cursor-pointer capitalize font-semibold text-xl text-gray-800 relative group"
             >
               <Link to={link} smooth duration={1000}>
@@ -69,7 +65,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-gray-800 md:hidden"
+          className="hidden cursor-pointer pr-4 z-10 text-gray-800 lg:flex"
         >
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
@@ -79,7 +75,7 @@ const Navbar = () => {
             {links.map(({ id, link }) => (
               <motion.li
                 key={id}
-                initial={{ y: -30, opacity: 0 }}
+                initial={{ y: -80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: id * 0.1 }}
                 className="px-4 cursor-pointer capitalize py-6 text-4xl font-bold"
@@ -97,7 +93,7 @@ const Navbar = () => {
           </ul>
         )}
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
