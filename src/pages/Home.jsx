@@ -10,10 +10,10 @@ function Home() {
     <>
       <Navbar />
       <Hero />
-      <SocialLinks />
       <About />
-      <Projects />
+      <SocialLinks />
       <Experience />
+      <Projects />
     </>
   );
 }

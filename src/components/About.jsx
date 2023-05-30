@@ -4,22 +4,22 @@ import AboutImage from "../images/about.jpg";
 const About = () => {
   return (
     <div name="about" className="h-screen w-full bg-white">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center max-md:text-center justify-center h-full px-4 md:flex-row">
+      <div className="mx-auto flex flex-row items-center justify-center h-screen md:flex-col">
         <div>
           <img
             src={AboutImage}
             alt=""
-            className="rounded-2xl w-3/5 md:w-96 mt-36 md:mt-0 mx-auto"
+            className="rounded-2xl w-96 md:w-3/5 mt-0 md:mt-24 md:mx-auto"
           ></img>
         </div>
-        <div className="flex flex-col justify-center h-full ml-16 max-md:ml-0">
-          <p className="text-3xl font-bold inline text-red-700 py-2">
+        <div className="flex flex-col justify-center h-full ml-16 md:ml-0 md:px-8">
+          <p className="text-3xl sm:text-[25px] font-bold inline text-red-700 py-2">
             About Me
           </p>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800">
+          <h2 className="text-3xl sm:text-[28px] font-semibold text-gray-800">
             Guam ✈️ California 📍
           </h2>
-          <p className="text-gray-600 py-4 max-w-md text-[0.95rem] md:text-md font-medium">
+          <p className="text-gray-600 py-4 max-w-md text-[0.95rem] md:text-[15px] text-justify font-medium">
             I am an aspiring Computer Engineer with a strong passion for
             technology and a diverse skill set that includes proficiency in
             HTML, JavaScript, CSS, Python, C++, C, and Swift. With an innate
