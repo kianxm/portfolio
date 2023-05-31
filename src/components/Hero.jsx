@@ -22,13 +22,13 @@ const Home = () => {
     <div name="home" className="h-screen w-full bg-gray-100">
       <div className="max-w-full mx-auto flex flex-row items-center justify-center h-full px-4 md:flex-col">
         <div className="order-1 md:order-2 px-14 lg:px-8 mr-8 xl:mr-0">
-          <Animation className="text-4xl sm:text-3xl font-bold text-red-700 py-4 w-full text-left md:text-center">
+          <Animation className="text-4xl md:text-3xl sm:text-2xl font-bold text-red-700 py-4 sm:py-2 w-full text-left md:text-center">
             Software Engineer
           </Animation>
-          <Animation className="text-6xl md:text-5xl font-bold text-gray-800 w-full text-left md:text-center">
+          <Animation className="text-6xl md:text-5xl sm:text-3xl font-bold text-gray-800 w-full text-left md:text-center">
             Kian Malakooti
           </Animation>
-          <Animation className="text-gray-600 font-medium py-4 max-w-md text-left md:text-center">
+          <Animation className="text-gray-600 font-medium py-4 max-w-md text-left md:text-center sm:text-[14px] sm:py-2">
             Computer Engineer Major @ Santa Clara University 📍
           </Animation>
           <Animation>
