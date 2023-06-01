@@ -54,36 +54,36 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-0">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
+            position="Project Manager"
+            company="Santa Clara University"
+            companyLink="https://www.scu.edu"
             time="2022-Present"
-            address="Mountain View, CA"
-            work="This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later."
+            address="Santa Clara, CA"
+            work="I led an innovative initiative to transform dorm tours for prospective students by creating a 'digital twin' of university dorms using AR/VR technology. I managed a team of developers and ensured smooth integration for an optimal final product. By implementing the Matterport SDK with Javascript, I developed an easily accessible dorm tour on a third-party website, providing a user-friendly and immersive experience. Through daily scrum meetings, I ensured timely execution and seamless implementation. My leadership and technical expertise revolutionized the dorm touring experience, enhancing engagement for prospective students."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later."
+            position="Cybersecurity Researcher"
+            company="Varian Medical Systems"
+            companyLink="https://www.varian.com/"
+            time="Sept 2021 - Sept 2022"
+            address="Santa Clara, CA"
+            work="I conducted qualitative and quantitative research to provide data-driven cybersecurity recommendations for Varian Medical Systems. I also created an internal playbook for implementing cybersecurity measures in their Software as a Service (SaaS) business model. Additionally, I investigated the cloud computing industry's cybersecurity practices and standards. My research-driven approach strengthened cybersecurity for Varian Medical Systems and ensured alignment with industry best practices."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later."
+            position="Freelance Photography Intern"
+            company="Premium Art Photo"
+            companyLink="http://www.guampap.com/"
+            time="Aug 2019 - Oct 2019"
+            address="Hagåtña, GU"
+            work="Through this internship, I learned how to take studio-level photos and edit them with various softwares such as Adobe Photoshop and Lightroom. I gained experience in the industry and have applied what I learned to my photography portfolio."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later. This is the filler description for the experience that I'm going to talk about later."
+            position="Information Technology Assistant"
+            company="Animal Medical Clinic"
+            companyLink="http://www.amcguam.com"
+            time="Jan 2018 - May 2018"
+            address="Tamuning, GU"
+            work="I repaired and maintained the company's computer systems, both hardware and software. This included installing and configuring servers for Avimark software distribution. I also regulated user access to protect sensitive files and provided technical support to address software and hardware inquiries."
           />
         </ul>
       </div>

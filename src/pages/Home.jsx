@@ -2,8 +2,10 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import SocialLinks from "../components/SocialLinks";
 import About from "../components/About";
-import Projects from "../components/Projects";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import Portfolio from "../components/Portfolio";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -13,7 +15,9 @@ function Home() {
       <About />
       <SocialLinks />
       <Experience />
+      <Portfolio />
       <Projects />
+      {/* <Footer /> */}
     </>
   );
 }
