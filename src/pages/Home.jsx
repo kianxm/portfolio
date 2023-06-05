@@ -15,7 +15,7 @@ function Home() {
       <About />
       <SocialLinks />
       <Experience />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Projects />
       {/* <Footer /> */}
     </>

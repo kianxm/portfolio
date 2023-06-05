@@ -54,6 +54,14 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-0">
           <Details
+            position="Incoming Software Engineering Intern"
+            company="Geopogo"
+            companyLink="https://www.geopogoar.com"
+            time="Start date: June 2023"
+            address="Berkeley, CA"
+            work=""
+          />
+          <Details
             position="Project Manager"
             company="Santa Clara University"
             companyLink="https://www.scu.edu"

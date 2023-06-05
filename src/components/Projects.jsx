@@ -2,6 +2,7 @@ import React from "react";
 import stpraiImage from "../images/stprai.png";
 import dormImage from "../images/scudormtours.png";
 import dormRender from "../images/dormdevicerender.png";
+import chessImg from "../images/chessimg.webp";
 import { BsCodeSlash } from "react-icons/bs";
 import { ImCodepen } from "react-icons/im";
 
@@ -31,14 +32,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      name: "VR Dorm Tours",
-      image: dormRender,
+      name: "Chess AI",
+      image: chessImg,
       description:
-        "Enabling prospective students at Santa Clara University to experience dorm life and sociality with Matterport technology.",
-      languages: ["React", "Matterport"],
-      demoLink: "https://scudormtours.vercel.app/",
-      codeLink: "https://github.com/kianxm/dorm-tours",
-      alt: "vr-dorm-tours",
+        "Reengineered Chess from scratch with an AI opponent utilizing alpha-beta pruning and nega-max algorithms.",
+      languages: ["Python"],
+      demoLink: "",
+      codeLink: "https://github.com/kianxm/chessAI",
+      alt: "chess",
     },
   ];
 
