@@ -35,9 +35,9 @@ const Projects = () => {
       name: "Chess AI",
       image: chessImg,
       description:
-        "Reengineered Chess from scratch with an AI opponent utilizing alpha-beta pruning and nega-max algorithms.",
+        "Built a Chess engine from scratch to play with an AI opponent utilizing alpha-beta pruning and nega-max algorithms.",
       languages: ["Python"],
-      demoLink: "",
+      demoLink: "https://github.com/kianxm/chessAI",
       codeLink: "https://github.com/kianxm/chessAI",
       alt: "chess",
     },

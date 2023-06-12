@@ -33,7 +33,7 @@ const Home = () => {
           </Animation>
           <Animation>
             <Link
-              to="portfolio"
+              to="projects"
               smooth
               duration={1000}
               offset={-30}
