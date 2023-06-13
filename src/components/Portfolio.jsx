@@ -14,7 +14,10 @@ const Portfolio = () => {
       </h2>
       <ul className="flex justify-center md:flex-col md:items-center lg:w-[80%]">
         {ImageData.slice(0, 3).map(({ title, name, path }) => (
-          <Link to="portfolio/africa" className="p-2 relative cursor-pointer">
+          <Link
+            to={`/portfolio/${name}`}
+            className="p-2 relative cursor-pointer"
+          >
             <IKImage
               className="mb-4 rounded-xl"
               urlEndpoint={urlEndpoint}
