@@ -19,5 +19,16 @@ module.exports = {
       xs: { max: "479px" },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".zoom-effect": {
+          transition: "transform 0.3s ease",
+        },
+        ".zoom-effect:hover": {
+          transform: "scale(1.05)",
+        },
+      });
+    },
+  ],
 };

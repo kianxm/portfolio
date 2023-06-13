@@ -7,7 +7,7 @@ const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-wrap py-32 justify-center">
+    <div name="portfolio" className="flex flex-wrap py-32 justify-center">
       <h2 className="w-full font-bold text-8xl md:text-5xl xs:text-[2.8rem] mb-20 text-center md:mb-16 text-gray-800">
         Portfolio 📸
       </h2>
@@ -23,7 +23,7 @@ const Portfolio = () => {
                   height: 300,
                 },
               ]}
-              className="mb-4 rounded-xl"
+              className="mb-4 rounded-xl zoom-effect"
             />
           </div>
         ))}
@@ -40,7 +40,7 @@ const Portfolio = () => {
                   height: 300,
                 },
               ]}
-              className="mb-4 rounded-xl"
+              className="mb-4 rounded-xl zoom-effect"
             />
           </div>
         ))}
@@ -57,7 +57,7 @@ const Portfolio = () => {
                   height: 300,
                 },
               ]}
-              className="mb-4 rounded-xl"
+              className="mb-4 rounded-xl zoom-effect"
             />
           </div>
         ))}
@@ -74,7 +74,7 @@ const Portfolio = () => {
                   height: 300,
                 },
               ]}
-              className="mb-4 rounded-xl"
+              className="mb-4 rounded-xl zoom-effect"
             />
           </div>
         ))}
