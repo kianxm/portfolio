@@ -1,5 +1,4 @@
 import React from "react";
-import AboutImage from "../images/about.jpg";
 import { IKImage } from "imagekitio-react";
 
 const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";

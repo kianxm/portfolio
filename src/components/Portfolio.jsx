@@ -1,7 +1,7 @@
 import React from "react";
 import { IKImage } from "imagekitio-react";
 
-import IMAGES from "./PortfolioImages";
+import SECTIONIMAGES from "./PortfolioImages";
 
 const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";
 
@@ -11,71 +11,24 @@ const Portfolio = () => {
       <h2 className="w-full font-bold text-8xl md:text-5xl xs:text-[2.8rem] mb-20 text-center md:mb-16 text-gray-800">
         Portfolio 📸
       </h2>
-      <div className="flex justify-center w-[80%] lg:w-full">
-        {IMAGES.slice(0, 6).map(({ id, path }) => (
-          <div key={id} className="p-2">
+      <div className="flex justify-center md:flex-col md:items-center lg:w-[80%]">
+        {SECTIONIMAGES.slice(0, 3).map(({ id, name, path }) => (
+          <div key={id} className="p-2 relative cursor-pointer">
             <IKImage
+              className="mb-4 rounded-xl"
               urlEndpoint={urlEndpoint}
               path={path}
               loading="lazy"
               transformation={[
                 {
-                  height: 300,
+                  quality: 100,
+                  height: 400,
                 },
               ]}
-              className="mb-4 rounded-xl zoom-effect"
             />
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center w-[80%] lg:hidden">
-        {IMAGES.slice(6, 14).map(({ id, path }) => (
-          <div key={id} className="p-2">
-            <IKImage
-              urlEndpoint={urlEndpoint}
-              path={path}
-              loading="lazy"
-              transformation={[
-                {
-                  height: 300,
-                },
-              ]}
-              className="mb-4 rounded-xl zoom-effect"
-            />
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center w-[80%] lg:w-full">
-        {IMAGES.slice(14, 21).map(({ id, path }) => (
-          <div key={id} className="p-2">
-            <IKImage
-              urlEndpoint={urlEndpoint}
-              path={path}
-              loading="lazy"
-              transformation={[
-                {
-                  height: 300,
-                },
-              ]}
-              className="mb-4 rounded-xl zoom-effect"
-            />
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center w-[80%] lg:hidden">
-        {IMAGES.slice(21, 27).map(({ id, path }) => (
-          <div key={id} className="p-2">
-            <IKImage
-              urlEndpoint={urlEndpoint}
-              path={path}
-              loading="lazy"
-              transformation={[
-                {
-                  height: 300,
-                },
-              ]}
-              className="mb-4 rounded-xl zoom-effect"
-            />
+            <p className="absolute bottom-6 right-4 p-2 text-2xl sm:text-lg font-semibold text-white">
+              {name}
+            </p>
           </div>
         ))}
       </div>
