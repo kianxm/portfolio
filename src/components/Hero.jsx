@@ -1,8 +1,10 @@
 import React from "react";
-import heroImageJPG from "../images/hero.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import { IKImage } from "imagekitio-react";
+
+const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";
 
 const Animation = ({ children, className }) => {
   return (
@@ -47,7 +49,11 @@ const Home = () => {
           </Animation>
         </div>
         <Animation className="order-2 md:order-1  w-[20%] xl:w-1/4 lg:w-[30%] md:w-2/4 sm:w-3/4 md:mb-4">
-          <img src={heroImageJPG} alt="hero" className="rounded-2xl" />
+          <IKImage
+            urlEndpoint={urlEndpoint}
+            path="hero.jpg"
+            className="rounded-2xl"
+          />
         </Animation>
       </div>
     </div>

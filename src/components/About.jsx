@@ -1,16 +1,19 @@
 import React from "react";
 import AboutImage from "../images/about.jpg";
+import { IKImage } from "imagekitio-react";
+
+const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";
 
 const About = () => {
   return (
     <div name="about" className="h-screen w-full bg-white">
       <div className="mx-auto flex flex-row items-center justify-center h-screen md:flex-col">
         <div>
-          <img
-            src={AboutImage}
-            alt=""
+          <IKImage
+            urlEndpoint={urlEndpoint}
+            path="professional.jpg"
             className="rounded-2xl w-96 md:w-3/5 mt-0 md:mt-24 md:mx-auto"
-          ></img>
+          />
         </div>
         <div className="flex flex-col justify-center h-full ml-16 md:ml-0 md:px-8">
           <p className="text-3xl sm:text-[25px] font-bold inline text-red-700 py-2">

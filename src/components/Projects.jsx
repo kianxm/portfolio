@@ -1,7 +1,6 @@
 import React from "react";
 import stpraiImage from "../images/stprai.png";
 import dormImage from "../images/scudormtours.png";
-import dormRender from "../images/dormdevicerender.png";
 import chessImg from "../images/chessimg.webp";
 import { BsCodeSlash } from "react-icons/bs";
 import { ImCodepen } from "react-icons/im";
