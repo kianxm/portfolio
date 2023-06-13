@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const loaderText = "key.dev";
@@ -26,14 +26,6 @@ const letter = {
 };
 
 const Loader = () => {
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    let timeout = setTimeout(() => setShow(true), 300);
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, []);
-
   return (
     <motion.h3
       className="flex justify-center items-center h-screen bg-gray-100"
@@ -43,17 +35,13 @@ const Loader = () => {
     >
       {loaderText.split("").map((char, index) => {
         return (
-          <>
-            {show && (
-              <motion.span
-                key={char + "-" + index}
-                variants={letter}
-                className="font-bold text-4xl"
-              >
-                {char}
-              </motion.span>
-            )}
-          </>
+          <motion.span
+            key={char + "-" + index}
+            variants={letter}
+            className="font-bold text-4xl"
+          >
+            {char}
+          </motion.span>
         );
       })}
     </motion.h3>
