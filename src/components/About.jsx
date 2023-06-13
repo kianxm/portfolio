@@ -10,7 +10,7 @@ const About = () => {
         <div>
           <IKImage
             urlEndpoint={urlEndpoint}
-            path="professional.jpg"
+            path="me/professional.jpg"
             className="rounded-2xl w-96 md:w-3/5 mt-0 md:mt-24 md:mx-auto"
           />
         </div>
