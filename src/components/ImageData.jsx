@@ -1,4 +1,4 @@
-const SECTIONIMAGES = [
+const ImageData = [
   {
     id: 1,
     name: "graduation",
@@ -99,4 +99,4 @@ const SECTIONIMAGES = [
   },
 ];
 
-export default SECTIONIMAGES;
+export { ImageData };

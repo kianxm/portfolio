@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import SECTIONIMAGES from "../components/PortfolioImageData";
+import { ImageData } from "../components/ImageData";
 import { IKImage } from "imagekitio-react";
 
 const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";
 
 const PortfolioImages = () => {
   const { name } = useParams();
-  const location = SECTIONIMAGES.find((location) => location.name === name);
+  const location = ImageData.find((location) => location.name === name);
 
   const [selectedImage, setSelectedImage] = useState(null);
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IKImage } from "imagekitio-react";
 
-import SECTIONIMAGES from "./PortfolioImageData";
+import { ImageData } from "./ImageData";
 
 const urlEndpoint = "https://ik.imagekit.io/kianmalakooti/";
 
@@ -13,7 +13,7 @@ const Portfolio = () => {
         Portfolio 📸
       </h2>
       <div className="flex justify-center md:flex-col md:items-center lg:w-[80%]">
-        {SECTIONIMAGES.slice(0, 3).map(({ id, title, name, path }) => (
+        {ImageData.slice(0, 3).map(({ id, title, name, path }) => (
           <Link
             to={`/portfolio/${name}`}
             key={id}
