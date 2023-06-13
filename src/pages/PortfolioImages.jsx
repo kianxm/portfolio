@@ -38,6 +38,7 @@ const PortfolioImages = () => {
                 {
                   width: 400,
                   height: 400,
+                  focus: "auto",
                 },
               ]}
             />
