@@ -13,7 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="portfolio/:name" element={<PortfolioImages />} />
-            <Route path="*" element={<Loader />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </Suspense>
       </Router>
