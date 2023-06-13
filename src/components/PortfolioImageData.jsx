@@ -4,13 +4,13 @@ const SECTIONIMAGES = [
     name: "graduation",
     title: "Graduation",
     description: "Graduation 2023 from Santa Clara University",
-    path: "justin.jpg",
+    path: "graduation/justin.jpg",
     detailedImages: [
-      { id: 1, path: "portfolio-15.jpg" },
-      { id: 2, path: "portfolio-16.jpg" },
-      { id: 3, path: "portfolio-17.jpg" },
-      { id: 4, path: "portfolio-18.jpg" },
-      { id: 5, path: "portfolio-19.jpg" },
+      { id: 1, path: "africa/portfolio-15.jpg" },
+      { id: 2, path: "africa/portfolio-16.jpg" },
+      { id: 3, path: "africa/portfolio-17.jpg" },
+      { id: 4, path: "africa/portfolio-18.jpg" },
+      { id: 5, path: "africa/portfolio-19.jpg" },
     ],
   },
   {
@@ -18,7 +18,7 @@ const SECTIONIMAGES = [
     name: "africa",
     title: "Africa",
     description: "2020 Africa Trip",
-    path: "portfolio-3.jpg",
+    path: "africa/portfolio-3.jpg",
     detailedImages: [
       { id: 1, path: "africa/portfolio-1.jpg" },
       { id: 2, path: "africa/portfolio-2.jpg" },
@@ -54,7 +54,7 @@ const SECTIONIMAGES = [
     name: "collabs",
     title: "Brand Collabs",
     description: "Collaborations with Crook x Long Island",
-    path: "hallie.jpg",
+    path: "collabs/hallie.jpg",
     detailedImages: [
       { id: 1, path: "collabs/crook-1.jpg" },
       { id: 2, path: "collabs/crook-2.jpg" },
