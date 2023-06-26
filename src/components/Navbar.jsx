@@ -27,10 +27,10 @@ const Navbar = () => {
       id: 5,
       link: "projects",
     },
-    {
-      id: 6,
-      link: "contact",
-    },
+    // {
+    //   id: 6,
+    //   link: "contact",
+    // },
   ];
 
   return (

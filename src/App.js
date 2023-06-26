@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="portfolio/:name" element={<PortfolioImages />} />
-        </Routes>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="portfolio/:name" element={<PortfolioImages />} />
+          </Routes>
+        </Suspense>
       </Router>
     </>
   );
