@@ -47,7 +47,7 @@ const Projects = () => {
       name="projects"
       className="w-full h-full bg-white items-center text-gray-800 pb-12"
     >
-      <h1 className="text-8xl sm:text-6xl xs:text-5xl pt-32 pb-20 font-bold text-center">
+      <h1 className="text-8xl md:text-5xl xs:text-[2.8rem] pt-32 pb-20 font-bold text-center">
         Projects 🎏
       </h1>
       {projects.map(

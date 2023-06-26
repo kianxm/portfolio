@@ -11,7 +11,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     >
       <LiIcon reference={ref} />
       <motion.div
-        initial={{ y: 50 }}
+        initial={{ y: 30 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
@@ -54,12 +54,12 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-0">
           <Details
-            position="Incoming Software Engineering Intern"
+            position="Software Engineering Intern"
             company="Geopogo"
             companyLink="https://www.geopogoar.com"
             time="Start date: June 2023"
             address="Berkeley, CA"
-            work=""
+            work="During my internship at Geopogo, I contributed to various aspects of the company's projects. I leveraged my skills in Swift to address bugs, redesign the iOS app, and successfully publish updates. Additionally, I played a significant role on the augmented reality (AR) team, where I utilized Unity and C# to develop and seamlessly integrate 3D models across desktop platforms, thereby enhancing the overall immersive experiences for users."
           />
           <Details
             position="Project Manager"

@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav>
       <motion.div
-        className="flex justify-between items-center w-screen h-20 px-4 fixed bg-white z-50 shadow-md"
+        className="flex justify-between items-center w-screen h-20 px-4 fixed bg-white z-50"
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
