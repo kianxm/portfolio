@@ -48,7 +48,7 @@ const Home = () => {
             </Link>
           </Animation>
         </div>
-        <Animation className="order-2 md:order-1  w-[20%] xl:w-1/4 lg:w-[30%] md:w-2/4 sm:w-3/4 md:mb-4">
+        <Animation className="order-2 md:order-1 w-[20%] xl:w-1/4 lg:w-[30%] md:w-2/4 sm:w-3/4 md:mb-4">
           <IKImage
             urlEndpoint={urlEndpoint}
             path="me/hero.jpg"
