@@ -17,6 +17,7 @@ const Portfolio = () => {
           <Link
             to={`/portfolio/${name}`}
             className="p-2 relative cursor-pointer"
+            target="_blank"
           >
             <IKImage
               className="mb-4 rounded-xl"
