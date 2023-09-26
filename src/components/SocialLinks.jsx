@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbAlignBoxLeftMiddle } from "react-icons/tb";
-import resume from "../KianMalakootiResume.pdf";
+import resume from "../KianMalakooti_Resume.pdf";
 
 const SocialLinks = () => {
   const links = [
@@ -14,7 +14,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/kian-malakooti-18397218b/",
+      href: "https://www.linkedin.com/in/kianmalakooti",
       style: "rounded-tr-md",
     },
     {
