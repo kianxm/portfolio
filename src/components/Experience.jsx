@@ -55,17 +55,25 @@ const Experience = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-0">
           <Details
             position="Software Engineering Intern"
+            company="Torpago"
+            companyLink="https://www.torpago.com"
+            time="February 2023 - Present"
+            address="San Francisco, CA"
+            work=""
+          />
+          <Details
+            position="Software Engineering Intern"
             company="Geopogo"
             companyLink="https://www.geopogoar.com"
-            time="Start date: June 2023"
+            time="June 2023 - December 2023"
             address="Berkeley, CA"
-            work="During my internship at Geopogo, I contributed to various aspects of the company's projects. I leveraged my skills in Swift to address bugs, redesign the iOS app, and successfully publish updates. Additionally, I played a significant role on the augmented reality (AR) team, where I utilized Unity and C# to develop and seamlessly integrate 3D models across desktop platforms, thereby enhancing the overall immersive experiences for users."
+            work="During my internship at Geopogo, I contributed to various aspects of the company's projects. I leveraged my skills in Swift to implement search functionality, redesign the iOS app, and successfully publish updates to 2k+ users."
           />
           <Details
             position="Project Manager"
             company="Santa Clara University"
             companyLink="https://www.scu.edu"
-            time="2022-Present"
+            time="September 2022 - May 2023"
             address="Santa Clara, CA"
             work="I led an innovative initiative to transform dorm tours for prospective students by creating a 'digital twin' of university dorms using AR/VR technology. I managed a team of developers and ensured smooth integration for an optimal final product. By implementing the Matterport SDK with Javascript, I developed an easily accessible dorm tour on a third-party website, providing a user-friendly and immersive experience. Through daily scrum meetings, I ensured timely execution and seamless implementation. My leadership and technical expertise revolutionized the dorm touring experience, enhancing engagement for prospective students."
           />
@@ -73,7 +81,7 @@ const Experience = () => {
             position="Cybersecurity Researcher"
             company="Varian Medical Systems"
             companyLink="https://www.varian.com/"
-            time="Sept 2021 - Sept 2022"
+            time="September 2021 - September 2022"
             address="Santa Clara, CA"
             work="I conducted qualitative and quantitative research to provide data-driven cybersecurity recommendations for Varian Medical Systems. I also created an internal playbook for implementing cybersecurity measures in their Software as a Service (SaaS) business model. Additionally, I investigated the cloud computing industry's cybersecurity practices and standards. My research-driven approach strengthened cybersecurity for Varian Medical Systems and ensured alignment with industry best practices."
           />
@@ -81,7 +89,7 @@ const Experience = () => {
             position="Freelance Photography Intern"
             company="Premium Art Photo"
             companyLink="http://www.guampap.com/"
-            time="Aug 2019 - Oct 2019"
+            time="August 2019 - October 2019"
             address="Hagåtña, GU"
             work="Through this internship, I learned how to take studio-level photos and edit them with various softwares such as Adobe Photoshop and Lightroom. I gained experience in the industry and have applied what I learned to my photography portfolio."
           />
@@ -89,7 +97,7 @@ const Experience = () => {
             position="Information Technology Assistant"
             company="Animal Medical Clinic"
             companyLink="http://www.amcguam.com"
-            time="Jan 2018 - May 2018"
+            time="January 2018 - May 2018"
             address="Tamuning, GU"
             work="I repaired and maintained the company's computer systems, both hardware and software. This included installing and configuring servers for Avimark software distribution. I also regulated user access to protect sensitive files and provided technical support to address software and hardware inquiries."
           />

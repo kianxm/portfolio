@@ -31,7 +31,7 @@ const Home = () => {
             Kian Malakooti
           </Animation>
           <Animation className="text-gray-600 font-medium py-4 max-w-md text-left md:text-center sm:text-[14px] sm:py-2">
-            Computer Engineer Major @ Santa Clara University 📍
+            Sunnyvale, CA 📍
           </Animation>
           <Animation>
             <Link

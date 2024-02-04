@@ -19,17 +19,17 @@ const About = () => {
             About Me
           </p>
           <h2 className="text-3xl sm:text-[28px] font-semibold text-gray-800">
-            Guam ✈️ California 📍
+            Guam ✈️ California
           </h2>
           <p className="text-gray-600 py-4 max-w-md text-[0.95rem] md:text-[15px] text-justify font-medium">
-            I am an aspiring Computer Engineer with a strong passion for
-            technology and a diverse skill set that includes proficiency in
-            HTML, JavaScript, CSS, Python, C++, C, and Swift. With an innate
-            ability to work well in teams, I have honed my leadership skills to
-            effectively guide and collaborate with my peers in various projects.
-            My dedication to continuous learning and growth in the ever-evolving
-            field of technology drives me to seek opportunities where I can
-            apply my skills and contribute to creating innovative solutions.
+            I am a Computer Engineer with a strong passion for technology and a
+            diverse skill set that includes proficiency in JavaScript, HTML,
+            CSS, Python, C++, C, and Swift. With an innate ability to work well
+            in teams, I have honed my leadership skills to effectively guide and
+            collaborate with my peers in various projects. My dedication to
+            continuous learning and growth in the ever-evolving field of
+            technology drives me to seek opportunities where I can apply my
+            skills and contribute to creating innovative solutions.
           </p>
         </div>
       </div>
