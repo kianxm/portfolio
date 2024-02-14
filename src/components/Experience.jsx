@@ -58,7 +58,7 @@ const Experience = () => {
             company="Torpago"
             companyLink="https://www.torpago.com"
             time="February 2023 - Present"
-            address="San Francisco, CA"
+            address="San Mateo, CA"
             work=""
           />
           <Details
@@ -85,7 +85,7 @@ const Experience = () => {
             address="Santa Clara, CA"
             work="I conducted qualitative and quantitative research to provide data-driven cybersecurity recommendations for Varian Medical Systems. I also created an internal playbook for implementing cybersecurity measures in their Software as a Service (SaaS) business model. Additionally, I investigated the cloud computing industry's cybersecurity practices and standards. My research-driven approach strengthened cybersecurity for Varian Medical Systems and ensured alignment with industry best practices."
           />
-          <Details
+          {/* <Details
             position="Freelance Photography Intern"
             company="Premium Art Photo"
             companyLink="http://www.guampap.com/"
@@ -100,7 +100,7 @@ const Experience = () => {
             time="January 2018 - May 2018"
             address="Tamuning, GU"
             work="I repaired and maintained the company's computer systems, both hardware and software. This included installing and configuring servers for Avimark software distribution. I also regulated user access to protect sensitive files and provided technical support to address software and hardware inquiries."
-          />
+          /> */}
         </ul>
       </div>
     </div>
